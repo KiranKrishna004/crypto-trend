@@ -10,17 +10,19 @@ const Trend = () => {
 		<>
 			{trend.map(({ item }, index) => {
 				return (
-					<tr key={index} className='w-full border-b-2'>
-						<td className='w-full items-center py-3'>
-							<div className='flex justify-items-start ml-5'>
+					<tr key={index} className='w-full border-2 over'>
+						<td className='w-full py-3'>
+							<div className='flex w-full ml-5'>
 								<img className='object-cover w-16 h-16' src={item.large} />
-								<div className='justify-items-center pl-5 pt-4'>
+								<div className='flex justify-items-center pl-5 pt-4'>
 									{item.name}
 								</div>
 							</div>
 						</td>
-						<td className='text-center'>{item.symbol}</td>
-						<td className='text-center'>{item.market_cap_rank}</td>
+						<td className='text-center hidden md:table-cell'>{item.symbol}</td>
+						<td className='text-center hidden md:table-cell'>
+							{item.market_cap_rank}
+						</td>
 						<td className='text-center'>{item.price_btc}</td>
 						<td>
 							<li key={index} className='list-none mx-4 whitespace-nowrap'>

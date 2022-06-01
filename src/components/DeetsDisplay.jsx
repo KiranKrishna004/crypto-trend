@@ -9,8 +9,8 @@ const DeetsDisplay = () => {
 			{coin.length === 0 ? (
 				<></>
 			) : (
-				<div className='my-12 mx-24 lg:mx-44 h-1/2 flex flex-col justify-center items-center '>
-					<img src={coin.image.large} />
+				<div className='my-12 xs:mx-6 sm:mx-20 lg:mx-44 h-1/2 flex flex-col justify-center items-center '>
+					<img className='xs:w-1/3 md:w-1/4 lg:w-1/6' src={coin.image.large} />
 					<div className='flex flex-wrap justify-center mt-4 font-bold text-3xl space-x-2'>
 						<p>{coin.name}</p>
 						<p className='font-light text-2xl'>
@@ -52,7 +52,9 @@ const DeetsDisplay = () => {
 					<div className='items-start border rounded-full px-2 mb-2'>
 						Twitter Followers: {coin.community_data.twitter_followers}
 					</div>
-					<div className='text-lg px-5 my-7'>{coin.description.en}</div>
+					<div className='text-lg px-5 my-7 font-thin'>
+						{coin.description.en}
+					</div>
 				</div>
 			)}
 		</>

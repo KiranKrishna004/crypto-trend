@@ -12,7 +12,7 @@ const Home = () => {
 			{trend === undefined ? (
 				<></>
 			) : (
-				<div className='min-h-screen'>
+				<div className='min-h-screen font-thin'>
 					<Navbar />
 					<Intro />
 					<Table />
