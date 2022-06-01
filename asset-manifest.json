@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/crypto-trend/static/css/main.33cc2051.css",
+    "main.js": "/crypto-trend/static/js/main.08eb4fab.js",
+    "index.html": "/crypto-trend/index.html",
+    "main.33cc2051.css.map": "/crypto-trend/static/css/main.33cc2051.css.map",
+    "main.08eb4fab.js.map": "/crypto-trend/static/js/main.08eb4fab.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33cc2051.css",
+    "static/js/main.08eb4fab.js"
+  ]
+}
